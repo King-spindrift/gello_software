@@ -1,0 +1,75 @@
+{
+  "followers": [
+    {
+      "name": "从臂1",
+      "enabled": true,
+      "robot_ip": "192.168.1.123",
+      "robot_port": 6001,
+      "joint_gains": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "从臂2",
+      "enabled": false,
+      "robot_ip": "",
+      "robot_port": 6002,
+      "joint_gains": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "control_hz": 250.0,
+  "arm_motion_enabled": true,
+  "home_hz": 30.0,
+  "gello_port": "/dev/serial/by-id/usb-FTDI_USB__-__Serial_Converter_FTBIE70X-if00-port0",
+  "master_home": [
+    6.3337,
+    -1.6182,
+    1.5565,
+    0.895,
+    -5.2408,
+    -7.5363,
+    1.0
+  ],
+  "follower_home": [
+    -0.32791,
+    -1.96018,
+    1.42545,
+    -2.07813,
+    -1.38295,
+    -3.44626,
+    0.0
+  ],
+  "joint_directions": [
+    1,
+    1,
+    -1,
+    1,
+    1,
+    -1
+  ],
+  "follower_movej_velocity": 0.8,
+  "follower_movej_acceleration": 1.5,
+  "follower_movej_jerk": 5.0,
+  "follower_movej_max_segment": 0.2,
+  "follower_home_movej_timeout": 45.0,
+  "follower_home_tolerance": 0.02,
+  "follower_servo_blend_threshold": 0.2,
+  "point_delta_threshold": 0.001,
+  "point_delta_hysteresis": 0.0003,
+  "second_order_natural_frequency": 18.0,
+  "max_velocity": 0.8,
+  "max_acceleration": 3.5,
+  "max_jerk": 15.0
+}
